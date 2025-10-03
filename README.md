@@ -1,3 +1,5 @@
+# Control otoño 2025
+
 ## P1
 
 Para este tipo de preguntas, en genetal, se puede asumir que los arboles son del tipo que a uno le convenga (`Nodoi`, `Nodoe` o con solo `Nodo`).
@@ -107,4 +109,4 @@ Estas son las preguntas más difíciles.
 
     Hay que chantar la fórmula y usar teorema maestro. con $p=1$, $q=2$ y $r=0$. Entonces, estamos en el caso $q^r = p$ y la solución es $T(n)=\Theta(n^r\log n) = \Theta(n^0\log n) = \Theta(\log n)$.
 
-## P4
+# Guía pre-control
