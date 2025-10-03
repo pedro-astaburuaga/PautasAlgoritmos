@@ -110,3 +110,29 @@ Estas son las preguntas más difíciles.
     Hay que chantar la fórmula y usar teorema maestro. con $p=1$, $q=2$ y $r=0$. Entonces, estamos en el caso $q^r = p$ y la solución es $T(n)=\Theta(n^r\log n) = \Theta(n^0\log n) = \Theta(\log n)$.
 
 # Guía pre-control
+
+<!-- ## P7
+
+Las invariantes de este problema son que tenemos 2 nodos iniciales de listas ordenadas y el nodo final de la nueva lista que estamos creando. Dice algoritmo iterativo, así que se usa for o while no recursión (esos son algoritmos recursivos) y como acá no sabemos el largo de las listas (con listas enlazadas nunca se sabe) entonces usamos while.
+
+```python
+def mezclarListasOrdenadas(self, lista2):
+    lista1 = self
+    fin_nueva_lista = None
+    if lista1.valor < lista2.valor:
+        fin_nueva_lista = lista1
+        lista1 = lista1.sgte
+    else:
+        fin_nueva_lista = lista2
+        lista2 = lista2.sgte
+
+
+    while lista1 != None and lista2 != None:
+        if lista1 == None:
+            fin_nueva_lista.sgte = lista 
+
+``` -->
+
+## P9
+
+Para encontrar el mínimo de algo que no tiene ningún orden, siempre hay que revisar todos los elementos. Teniendo una pila, la única forma de hacerlo es sacar todos los elementos de la pila hacía la otra pila, pero siempre llevando la cuenta de cual es el menor elemento hasta el momento, una vez se termina de vaciar la pila, se hace lo mismo de vuelta, pero al volver encontrar el mínimo de la primera iteración, no lo pasamos a la otra pila, sino que lo guardamos aparte y seguimos pasando los elementos a $S_1$, una vez terminemos agregamos el mínimo por sobre todos los elementos. Como movimos 2 veces todos los elementos de una pila a otra, la complejidad es $\Theta(2n) = \Theta(n)$
